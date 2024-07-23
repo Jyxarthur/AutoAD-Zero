@@ -26,7 +26,9 @@ Junyu Xie<sup>1</sup>, Tengda Han<sup>1</sup>, Max Bain<sup>1</sup>, Arsha Nagra
 ```pandas```,
 ```decord```,
 ```opencv```,
+```moviepy=1.0.3```
 ```transformers=4.37.2```
+```accelerate==0.26.1```
 
 * **[VideoLLaMA2](https://github.com/DAMO-NLP-SG/VideoLLaMA2)**:
 After installation, modify the `sys.path.append("/path/to/VideoLLaMA2")` in `stage1/main.py` and `stage1/utils.py`. Please download the VideoLLaMA2-7B checkpoint [here](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-7B).
