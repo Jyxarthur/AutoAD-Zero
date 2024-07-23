@@ -6,8 +6,8 @@ Junyu Xie<sup>1</sup>, Tengda Han<sup>1</sup>, Max Bain<sup>1</sup>, Arsha Nagra
 <sup>2</sup> LIGM, École des Ponts, Univ Gustave Eiffel, CNRS <br>
 <sup>3</sup> CMIC, Shanghai Jiao Tong University
 
-<a src="https://img.shields.io/badge/cs.CV-xxxx.xxxxxx-b31b1b?logo=arxiv&logoColor=red" href="https://arxiv.org/abs/xxxx.xxxxxx">  
-<img src="https://img.shields.io/badge/cs.CV-xxxx.xxxxxx-b31b1b?logo=arxiv&logoColor=red"></a>
+<a src="https://img.shields.io/badge/cs.CV-2407.15850-b31b1b?logo=arxiv&logoColor=red" href="https://arxiv.org/abs/2407.15850">  
+<img src="https://img.shields.io/badge/cs.CV-2407.15850-b31b1b?logo=arxiv&logoColor=red"></a>
 <a href="https://www.robots.ox.ac.uk/~vgg/research/autoad-zero/" alt="Project page"> 
 <img alt="Project page" src="https://img.shields.io/badge/project_page-autoad--zero-blue"></a>
 <a href="https://www.robots.ox.ac.uk/~vgg/research/autoad-zero/#tvad" alt="Dataset"> 
@@ -87,7 +87,7 @@ If you find this repository helpful, please consider citing our work:
 @article{xie2024autoad0,
 	title={AutoAD-Zero: A Training-Free Framework for Zero-Shot Audio Description},
 	author={Junyu Xie and Tengda Han and Max Bain and Arsha Nagrani and G\"ul Varol and Weidi Xie and Andrew Zisserman},
-	journal={arXiv preprint arXiv:xxxx:xxxxxx},
+	journal={arXiv preprint arXiv:2407.15850},
 	year={2024}
 }
 ```
