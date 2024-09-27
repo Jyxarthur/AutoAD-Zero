@@ -86,10 +86,10 @@ python stage2/main.py \
 ## Citation
 If you find this repository helpful, please consider citing our work:
 ```
-@article{xie2024autoad0,
+@InProceedings{xie2024autoad0,
 	title={AutoAD-Zero: A Training-Free Framework for Zero-Shot Audio Description},
 	author={Junyu Xie and Tengda Han and Max Bain and Arsha Nagrani and G\"ul Varol and Weidi Xie and Andrew Zisserman},
-	journal={arXiv preprint arXiv:2407.15850},
+	booktitle={ACCV},
 	year={2024}
 }
 ```
