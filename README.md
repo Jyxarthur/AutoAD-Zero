@@ -56,6 +56,10 @@ In this work, we evaluate our model on [CMD-AD](https://www.robots.ox.ac.uk/~vgg
 
 
 ## Inference
+#### Character Recognition
+The pre-computed character recognition results are available in [`resources/annotations`](resources/annotations) (e.g. `resources/annotations/cmdad_anno_with_face_0.2_0.4.csv`), which can be directly feeded into stage I (next step).
+
+It is also possible to run character recognition code from stratch. Please refer to the [`char_recog`](char_recog) folder for more details. 
 #### Stage I: VLM-Based Dense Video Description
 ```
 python stage1/main.py \
