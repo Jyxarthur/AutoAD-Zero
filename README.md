@@ -54,12 +54,12 @@ In this work, we evaluate our model on [CMD-AD](https://www.robots.ox.ac.uk/~vgg
 ## Results
 * The AutoAD-Zero predictions can be downloaded [here](https://drive.google.com/drive/folders/1WMTwsDwu59kS38Z3BAOjbATAywUWZDZF?usp=sharing).
 
-
-## Inference
-#### Character Recognition
+## Character Recognition
 The pre-computed character recognition results are available in [`resources/annotations`](resources/annotations) (e.g. `resources/annotations/cmdad_anno_with_face_0.2_0.4.csv`), which can be directly feeded into stage I (next step).
 
 It is also possible to run character recognition code from stratch. Please refer to the [`char_recog`](char_recog) folder for more details. 
+
+## Inference
 #### Stage I: VLM-Based Dense Video Description
 ```
 python stage1/main.py \
@@ -85,6 +85,29 @@ python stage2/main.py \
 ```
 `--dataset`: choices are `cmdad`, `madeval`, and `tvad`. <br>
 `--pred_path`: path to the stage1 saved csv file.
+
+
+## Inference with GPT-4o via OpenAI API
+Note: Before starting, insert OpenAI API keys into the corresponding `main.py` file. <br>
+Note: This is not officially tested and reported in the original paper. You may want to adjust the text prompts to get improved / more robust outputs.
+
+#### Stage I: VLM-Based Dense Video Description
+```
+python stage1_gpt/main.py \
+--dataset={dataset} \                  #e.g. "cmdad"
+--video_dir={video_dir} \
+--anno_path={anno_path} \              #e.g. "resources/annotations/cmdad_anno_with_face_0.2_0.4.csv"
+--charbank_path={charbank_path} \      #e.g. "resources/charbanks/cmdad_charbank.json" 
+--output_dir={output_dir}
+```
+
+#### Stage II: LLM-Based AD Summary
+```
+python stage2_gpt/main.py \
+--dataset={dataset} \             #e.g. "cmdad"
+--pred_path={stage1_result_path} 
+```
+
 
 
 ## Citation
