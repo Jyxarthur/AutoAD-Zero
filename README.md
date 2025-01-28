@@ -55,7 +55,7 @@ In this work, we evaluate our model on [CMD-AD](https://www.robots.ox.ac.uk/~vgg
 * The AutoAD-Zero predictions can be downloaded [here](https://drive.google.com/drive/folders/1WMTwsDwu59kS38Z3BAOjbATAywUWZDZF?usp=sharing).
 
 ## Character Recognition
-The pre-computed character recognition results are available in [`resources/annotations`](resources/annotations) (e.g. `resources/annotations/cmdad_anno_with_face_0.2_0.4.csv`), which can be directly feeded into stage I (next step).
+The pre-computed character recognition results (for both train and eval sets) are available in [`resources/annotations`](resources/annotations) (e.g. `resources/annotations/cmdad_anno_with_face_0.2_0.4.csv`), which can be directly feeded into stage I (next step).
 
 It is also possible to run character recognition code from stratch. Please refer to the [`char_recog`](char_recog) folder for more details. 
 
